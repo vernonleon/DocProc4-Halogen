@@ -23,6 +23,7 @@ jobs:
           # The oldest supported Ubuntu, so the Linux packages run on more distros.
           - platform: ubuntu-22.04
           - platform: windows-latest
+          - plaftorm: AppImage
     runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v7
