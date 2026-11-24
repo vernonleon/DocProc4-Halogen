@@ -1,0 +1,18 @@
+# Dependencies and build output (recreated by npm install / cargo / tauri)
+node_modules/
+src-tauri/target/
+src-tauri/gen/
+
+# Machine-local Cargo settings. On this machine they move build output off the
+# pCloud mount; they hold an absolute path, so they aren't part of the source.
+.cargo/
+src-tauri/.cargo/
+
+# pCloud sync-conflict copies
+*\[conflicted\]*
+
+# makepkg output in packaging/aur (sources, build dirs, packages)
+packaging/aur/docproc4-halogen/
+packaging/aur/src/
+packaging/aur/pkg/
+packaging/aur/*.pkg.tar.*

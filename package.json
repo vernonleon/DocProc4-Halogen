@@ -1,0 +1,15 @@
+{
+  "name": "docproc4-halogen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PDF to Markdown tailored for halogen-flash-server (Qwen3.8-Flash-Next on AMD Strix Halo)",
+  "scripts": {
+    "dev": "node scripts/tauri-local.js dev",
+    "build": "node scripts/tauri-local.js build",
+    "start": "cargo run --manifest-path src-tauri/Cargo.toml",
+    "test": "node --test scripts/test-inference.js && node scripts/test-repetition.js"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
